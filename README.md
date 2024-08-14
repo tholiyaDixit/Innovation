@@ -3,9 +3,9 @@
 ## innovation - next.js (Front-End)
 * start 
 ```
-yarn start  
+yarn run start  
 OR
-npm start
+npm run start
 ```
 
 ## admin - admin portal (menage APP)
