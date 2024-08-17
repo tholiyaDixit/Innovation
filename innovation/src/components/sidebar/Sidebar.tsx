@@ -250,7 +250,6 @@ const Sidebar = ({children}:any) => {
                 Downloads
               </button> */}
             {/* </div> */}
-            123
             {children}
           </main>
         </div>
