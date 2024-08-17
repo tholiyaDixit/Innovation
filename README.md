@@ -1,14 +1,14 @@
 # Innovation
 
 ## innovation - next.js (Front-End)
-* start 
+* start command
 ```
 yarn run start  
 OR
 npm run start
 ```
 
-## admin - admin portal (menage APP)
+## admin - admin portal (menage full APP)
 * start command
 ```
 yarn start  
