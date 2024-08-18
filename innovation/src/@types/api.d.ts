@@ -1,0 +1,5 @@
+namespace Header {
+    interface allPage {
+       
+    }
+}
