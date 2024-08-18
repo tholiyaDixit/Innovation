@@ -47,7 +47,6 @@ const Main = [
 
 const Sidebar = ({children}:any) => {
   const [openSideBar, setOpenSideBar] = useState(true);
-  console.log("openSideBar ---", openSideBar);
 
   return (
     <div>
