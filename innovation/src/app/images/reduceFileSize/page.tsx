@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import PreNextReload from "@/components/preRextReload_header/PreNextReload";
 import SelectImage from "@/components/selectImage/SelectImage";
 import Script from "next/script";
-import CompressImgDownloadCard from "@/components/card/compressImgDownloadCard/CompressImgDownloadCard";
+// import CompressImgDownloadCard from "@/components/card/compressImgDownloadCard/CompressImgDownloadCard";
 
 const page = () => {
   const [image, setImage] = useState<any>(null);

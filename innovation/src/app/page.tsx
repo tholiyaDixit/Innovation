@@ -15,9 +15,16 @@ export default function Home() {
             description={`click 'Upload' button and select any image then wait for result`}
             title={"Reduce File Size"}
           /> */}
-       {/* <PreNextReload /> */}
-       {/* <SelectImage /> */}
-       {/* <CompressImgDownloadCard /> */}
+        {/* <PreNextReload /> */}
+        {/* <SelectImage /> */}
+        {/* <CompressImgDownloadCard /> */}
+        {/* <svg height="200">
+          <polygon points="100,5 40,180 190,60 10,60 160,180" fill="red" />
+        </svg> */}
+
+
+
+        
       </main>
     </>
   );

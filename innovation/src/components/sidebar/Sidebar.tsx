@@ -2,13 +2,15 @@
 import React, { useState } from "react";
 import menuIcon from "../../images/svg/menu.svg";
 import Image from "next/image";
+import imgIcon from "@/images/svg/image.svg";
 
 const Following = [{ name: "Payal", img: "https://picsum.photos/200" }];
 const Library = [
   {
     name: "images",
     navigatePath:"/images",
-    icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    svg: imgIcon,
+    icon: undefined,
   },
   {
     name: "Favorites",
@@ -104,7 +106,7 @@ const Sidebar = ({children}:any) => {
                   <a
                     href={libraryItem.navigatePath}
                     className="flex items-center px-6 py-2.5 text-gray-500 hover:text-orange-600 group"
-                  >
+                  >{ !!libraryItem.icon ?
                     <svg
                       className="h-5 w-5 text-gray-400 mr-2 group-hover:text-orange-500"
                       fill="none"
@@ -119,7 +121,8 @@ const Sidebar = ({children}:any) => {
                         // d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                         d={libraryItem.icon}
                       ></path>
-                    </svg>
+                    </svg> : <Image src={libraryItem.svg} alt="O" width={20} height={20} style={{marginRight:"0.5rem"}} /> 
+                    }
                     {libraryItem.name}
                   </a>
                 </>

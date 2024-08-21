@@ -26,6 +26,15 @@
     rgb(var(--background-start-rgb));
 } */
 
+.customMessageClass {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(129, 244, 129);
+  padding: 15px 35px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -23,7 +23,9 @@ const ImagePageCard = (props: ImagePageCardProps) => {
               <Image
                 src={imagePath}
                 alt="tailwind logo"
-                className="rounded-xl"
+                className="rounded-xl h-3/4"
+                width={250}
+                height={150}
               />
             </div>
             <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">

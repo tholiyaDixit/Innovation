@@ -17,9 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <script src=""></script> */}
       <body className={inter.className}>
         <Sidebar>{children}</Sidebar>
+        
       </body>
+      
     </html>
   );
 }
