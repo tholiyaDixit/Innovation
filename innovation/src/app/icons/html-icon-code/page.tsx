@@ -4,7 +4,7 @@ import PreNextReload from "@/components/preRextReload_header/PreNextReload";
 import SelectBox from "@/components/selectBox/SelectBox";
 import React from "react";
 
-const selectedItem = ["HTML", "CSS", "SVG"];
+const selectedItem = ["HTML Code", "CSS Code", "SVG"];
 
 const page = () => {
   const [selectedValue, setSelectedValue] = React.useState("brazil");

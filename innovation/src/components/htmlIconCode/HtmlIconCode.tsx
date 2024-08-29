@@ -2,7 +2,10 @@ import React from "react";
 import { config } from "@/utils/htmlIconCodeConfig.json";
 
 const HtmlIconCode = () => {
+
+
   return (
+    <>
     <div className="mx-5 mt-5">
       <div className="relative flex flex-col w-full h-full text-gray-700 bg-white shadow-md rounded-xl bg-clip-border px-5 ">
         <table className="w-full text-left table-auto min-w-max">
@@ -72,37 +75,32 @@ const HtmlIconCode = () => {
               </td>
             </tr> */}
 
-            {config.map((code: allCode.htmlIconCode, index:number) => {
+            {config.map((code: any, index:number) => {
               return (
                 <>
                   <tr key={index}>
                     <td className="p-4 border-b border-blue-gray-50">
                       <p className="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                        {/* &#9728; */}
                         {code.Symbols}
                       </p>
                     </td>
                     <td className="p-4 border-b border-blue-gray-50">
                       <p className="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                        {/* 9728 */}
                         {code.Dec}
                       </p>
                     </td>
                     <td className="p-4 border-b border-blue-gray-50">
                       <p className="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                        {/* 2600 */}
                         {code.Hex}
                       </p>
                     </td>
                     <td className="p-4 border-b border-blue-gray-50">
                       <p className="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
-                        {/* BLACK SUN WITH RAYS */}
                         {code.Name}
                       </p>
                     </td>
                     <td className="p-4 border-b border-blue-gray-50">
                       <p className="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900 cursor-pointer">
-                        {/* Copy */}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -122,6 +120,7 @@ const HtmlIconCode = () => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 

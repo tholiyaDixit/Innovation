@@ -12,5 +12,6 @@ namespace allCode {
         Hex: string,
         Name: string,
         Copy: string,
+        type: string;
     }
 }
