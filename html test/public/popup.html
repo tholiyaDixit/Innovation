@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .customMessageClass {
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(129, 244, 129);
+        padding: 15px 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+    <button>success message</button>
+    <script>
+      const para = document.createElement("p");
+      para.setAttribute("id", "customPopupMessage");
+      para.setAttribute("class", "customMessageClass");
+      const node = document.createTextNode("This is new.");
+      para.appendChild(node);
+
+      // const element = document.getElementById("div1");
+      const element = document.getElementsByTagName('body')[0]
+      element.appendChild(para);
+
+      let elems = document.querySelectorAll(".customMessageClass");
+      for (const e of elems) {
+        setTimeout(
+          function (o) {
+            //2. Receive the element in variable o
+            o.remove(); //3. Remove the o variable
+          },
+          5000,
+          e
+        );
+      }
+    </script>
+  </body>
+</html>
