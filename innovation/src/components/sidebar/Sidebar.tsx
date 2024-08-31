@@ -4,9 +4,16 @@ import menuIcon from "../../images/svg/menu.svg";
 import Image from "next/image";
 import imgIcon from "@/images/svg/image.svg";
 import icons from "@/images/icons.webp";
+import jsUseFullFunctions from "@/images/svg/jsUseFullFunctions.svg";
 
 const Following = [{ name: "Payal", img: "https://picsum.photos/200" }];
 const Library = [
+  {
+    name: "jsFunctions",
+    navigatePath: "/jsFunctions",
+    svg: jsUseFullFunctions,
+    icon: undefined,
+  },
   {
     name: "images",
     navigatePath: "/images",

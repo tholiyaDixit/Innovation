@@ -5,13 +5,9 @@
 // import Sidebar from "@/components/sidebar/Sidebar";
 // import Image from "next/image";
 
-
-
+import JsUseFullFunctionCard from "@/components/card/jsUseFullFunctionCard/JsUseFullFunctionCard";
 
 export default function Home() {
-
-  
-  
   return (
     <>
       <main>
@@ -28,8 +24,8 @@ export default function Home() {
           <polygon points="100,5 40,180 190,60 10,60 160,180" fill="red" />
         </svg> */}
 
+        {/* <JsUseFullFunctionCard /> */}
 
-      
 
 
         
