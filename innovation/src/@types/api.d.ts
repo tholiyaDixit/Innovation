@@ -15,3 +15,12 @@ namespace allCode {
         type: string;
     }
 }
+
+namespace dateTime {
+    interface newDateAndTimeArray {
+        id: number;
+        title: string;
+        copyText: string;
+        result: string;
+    }
+}

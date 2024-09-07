@@ -1,0 +1,10 @@
+.dateTime {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 11px;
+  margin: 5px;
+  background: beige;
+  font-weight: 700;
+  cursor: pointer;
+}
