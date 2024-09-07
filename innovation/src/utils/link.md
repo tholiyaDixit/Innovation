@@ -1,0 +1,1 @@
+html sim - https://www.w3schools.com/charsets/ref_utf_basic_latin.asp
